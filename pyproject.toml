@@ -1,0 +1,27 @@
+[project]
+name = "genai-monitoring"
+version = "0.1.0"
+description = "GenAI monitoring and evaluation platform"
+authors = [
+    {name = "syahrulhamdani",email = "23093968+syahrulhamdani@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "streamlit (>=1.43.2,<1.44.0)",
+    "pandas (>=2.2.3,<2.3.0)",
+    "langsmith (>=0.3.18,<0.4.0)",
+    "pydantic-settings (>=2.8.1,<2.9.0)",
+    "python-json-logger (>=3.3.0,<3.4.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^6.0.0"
+pylint = "^3.3.6"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
